@@ -1,0 +1,17 @@
+@model TestMVC.Models.Product
+
+@{
+    ViewData["Title"] = "Sửa sản phẩm";
+}
+
+<div class="container mt-4">
+    <h2>Sửa sản phẩm</h2>
+
+    <form method="post">
+        <input type="hidden" asp-for="Id" />
+        <partial name="_ProductForm" model="Model" />
+
+        <button class="btn btn-warning">Cập nhật</button>
+        <a class="btn btn-secondary" asp-action="Index">Quay lại</a>
+    </form>
+</div>

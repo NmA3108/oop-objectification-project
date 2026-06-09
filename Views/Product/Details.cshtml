@@ -1,0 +1,21 @@
+@model TestMVC.Models.Product
+
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+
+<div class="container mt-4">
+    <h2>@Model.Name</h2>
+
+    <div class="card shadow p-4">
+        <img src="@Model.ImageUrl" class="mb-3" style="max-width: 350px;" />
+        <p><strong>Mã sản phẩm:</strong> @Model.Id</p>
+        <p><strong>Hãng:</strong> @Model.Brand</p>
+        <p><strong>Mô tả:</strong> @Model.Description</p>
+        <p><strong>Giá:</strong> @Model.Price.ToString("N0") VNĐ</p>
+        <p><strong>Tồn kho:</strong> @Model.Stock</p>
+        <p><strong>Ngày tạo:</strong> @Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")</p>
+    </div>
+
+    <a class="btn btn-secondary mt-3" asp-action="Index">Quay lại</a>
+</div>

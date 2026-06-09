@@ -1,0 +1,31 @@
+@model TestMVC.Models.Product
+
+<div class="mb-3">
+    <label class="form-label">Tên sản phẩm</label>
+    <input asp-for="Name" class="form-control" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Hãng</label>
+    <input asp-for="Brand" class="form-control" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Mô tả</label>
+    <textarea asp-for="Description" class="form-control"></textarea>
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Giá</label>
+    <input asp-for="Price" class="form-control" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Số lượng tồn kho</label>
+    <input asp-for="Stock" class="form-control" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Link hình ảnh</label>
+    <input asp-for="ImageUrl" class="form-control" />
+</div>

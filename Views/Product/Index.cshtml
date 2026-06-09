@@ -1,0 +1,54 @@
+@model List<TestMVC.Models.Product>
+
+@{
+    ViewData["Title"] = "Sản phẩm";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Quản lý sản phẩm</h2>
+        <a class="btn btn-success" asp-controller="Product" asp-action="Create">
+            Thêm sản phẩm
+        </a>
+    </div>
+
+    <form method="get" class="mb-4">
+        <div class="input-group">
+            <input type="text"
+                   name="keyword"
+                   value="@ViewBag.Keyword"
+                   class="form-control"
+                   placeholder="Nhập tên hoặc hãng sản phẩm..." />
+
+            <button class="btn btn-primary">
+                Tìm kiếm
+            </button>
+        </div>
+    </form>
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="@item.ImageUrl" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5>@item.Name</h5>
+                        <p><strong>Hãng:</strong> @item.Brand</p>
+                        <p>@item.Description</p>
+                        <h4 class="text-danger">@item.Price.ToString("N0") VNĐ</h4>
+                        <p>Tồn kho: @item.Stock</p>
+                    </div>
+
+                    <div class="card-footer d-flex gap-2">
+                        <a class="btn btn-outline-primary btn-sm" asp-action="Details" asp-route-id="@item.Id">Chi tiết</a>
+                        <a class="btn btn-outline-warning btn-sm" asp-action="Edit" asp-route-id="@item.Id">Sửa</a>
+                        <a class="btn btn-outline-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id">Xóa</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
