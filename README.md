@@ -1,118 +1,98 @@
-# 📦 OOP Objectification - Data Driven Approach
+# E-Commerce OOP System
 
-## 📖 Introduction
+## Giới thiệu
 
-This project focuses on analyzing and clarifying the concept of **objectification in Object-Oriented Programming (OOP)**. It also demonstrates how this principle can be applied to solve real-world problems using a **data-driven approach**.
+Đây là đồ án môn học với đề tài:
 
-Objectification is the process of modeling real-world entities as objects, encapsulating both data and behavior. This project aims to bridge theoretical concepts with practical implementation.
+**"Phân tích và làm rõ tính đối tượng hóa trong OOP và ứng dụng"**
 
----
+Đề tài xây dựng một hệ thống thương mại điện tử mẫu nhằm minh họa việc áp dụng các nguyên lý của lập trình hướng đối tượng (Object-Oriented Programming - OOP) trong phân tích, thiết kế và xây dựng phần mềm.
 
-## 🎯 Objectives
-
-* Understand the concept of objectification in OOP
-* Analyze how real-world problems can be modeled into objects
-* Apply OOP principles (Encapsulation, Inheritance, Polymorphism)
-* Implement a data-driven solution using object-oriented design
+Hệ thống được phát triển bằng ASP.NET Core MVC và tập trung vào việc thể hiện các kỹ thuật tổng quát hóa, đặc thù hóa, đóng gói, kế thừa, trừu tượng và đa hình.
 
 ---
 
-## 🧠 Key Concepts
+## Công nghệ sử dụng
 
-* Object-Oriented Programming (OOP)
-* Objectification
-* Data Modeling
-* Encapsulation
-* Inheritance
-* Polymorphism
-* Data-driven design
+* ASP.NET Core MVC
+* C#
+* Bootstrap 5
+* PlantUML
+* GitHub
 
 ---
 
-## 🛠️ Technologies Used
+## Chức năng đã xây dựng
 
-* Programming Language: (e.g., Python / Java / C++)
-* Tools: Git, GitHub
-* Optional: Database (if applicable)
+### Quản lý tài khoản
 
----
+* Đăng nhập hệ thống
+* Kiểm tra thông tin đăng nhập
 
-## 📂 Project Structure
+### Quản lý sản phẩm
 
-```
+* Hiển thị danh sách sản phẩm
+* Tìm kiếm sản phẩm
+* Xem chi tiết sản phẩm
+* Thêm sản phẩm
+* Chỉnh sửa sản phẩm
+* Xóa sản phẩm
 
-└── README.md
-```
+### Chức năng hỗ trợ
 
----
-
-## ⚙️ How It Works
-
-1. Define real-world entities based on the problem
-2. Convert these entities into classes (objectification)
-3. Load and process data (data-driven approach)
-4. Use object interactions to solve the problem
+* Quản lý dữ liệu theo mô hình CRUD
+* Mô hình hóa hệ thống bằng UML
 
 ---
 
-## 📊 Example Use Case
+## Áp dụng OOP trong hệ thống
 
-*(You will replace this with your actual problem)*
+### Đóng gói (Encapsulation)
 
-Example:
+Các thuộc tính và phương thức được quản lý thông qua các lớp Model.
 
-* Input: A dataset of products
-* Process:
+### Kế thừa (Inheritance)
 
-  * Convert each product into an object
-  * Apply business logic through object methods
-* Output: Processed data or insights
+Các lớp Customer, Seller và Admin kế thừa từ lớp User.
+
+### Trừu tượng (Abstraction)
+
+Sử dụng BaseModel làm lớp cơ sở cho các đối tượng trong hệ thống.
+
+### Đa hình (Polymorphism)
+
+Các phương thức xử lý thanh toán được triển khai thông qua các lớp kế thừa từ Payment.
+
+### Tổng quát hóa và đặc thù hóa
+
+Hệ thống sử dụng các lớp cơ sở và lớp dẫn xuất để giảm sự trùng lặp mã nguồn và tăng khả năng mở rộng.
 
 ---
 
-## 🚀 Getting Started
+## Cấu trúc thư mục
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/oop-objectification-data-driven.git
-```
-
-### 2. Run the project
-
-```bash
-# Example (Python)
-python main.py
+```text
+Controllers/
+Models/
+Views/
+Services/
+wwwroot/
 ```
 
 ---
 
-## 📌 Future Improvements
+## Kết quả đạt được
 
-* Add GUI interface
-* Improve data processing efficiency
-* Extend to larger datasets
-* Apply design patterns
-
----
-
-## 👤 Author
-
-* Name: Nguyễn Minh Ánh
-* Student ID: 23010718
+* Xây dựng thành công hệ thống thương mại điện tử mẫu.
+* Hoàn thành chức năng CRUD sản phẩm.
+* Áp dụng các nguyên lý của OOP trong thiết kế hệ thống.
+* Xây dựng các biểu đồ UML phục vụ quá trình phân tích và thiết kế.
 
 ---
 
-## 📚 References
+## Tác giả
 
-* Object-Oriented Programming concepts
-* Course materials
-* Online documentation
-
----
-
-## 💡 Notes
-
-This project is developed for academic purposes to demonstrate understanding of OOP and objectification concepts.
-
----
+Nguyễn Minh Ánh
+MSSV: 23010718
+Trường Đại học Phenikaa
+Năm học: 2025 - 2026
